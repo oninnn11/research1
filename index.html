@@ -1,123 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#007BFF,#66B2FF);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-
-.container{
-    background:white;
-    width:500px;
-    padding:40px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
-    position:relative;
-}
-
-h1{
-    color:#007BFF;
-    margin-bottom:20px;
-}
-
-p{
-    font-size:22px;
-    margin-bottom:40px;
-}
-
-button{
-    padding:12px 30px;
-    font-size:18px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-#yesBtn{
-    background:#007BFF;
-    color:white;
-    margin-right:20px;
-}
-
-#yesBtn:hover{
-    background:#0056b3;
-}
-
-#noBtn{
-    background:#ff4d4d;
-    color:white;
-    position:absolute;
-    left:280px;
-    top:200px;
-}
-
-#message{
-    margin-top:60px;
-    font-size:24px;
-    color:green;
-    font-weight:bold;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 id="logo">Niño Guevarra</h2>
 
-    <h1>Dashboard</h1>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <button class="contact-btn">Contact</button>
+        </div>
+    </nav>
 
-    <p>Do you agree with this decision?</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
 
-    <button id="yesBtn">Yes</button>
-    <button id="noBtn">No</button>
+        <h1>Niño Guevarra</h1>
 
-    <div id="message"></div>
+        <p class="course">BSIT Student</p>
 
-</div>
+        <p class="description">
+            Future Front-End Developer passionate about creating clean and responsive websites.
+        </p>
 
-<script>
+        <button id="portfolio-btn">View Portfolio</button>
+    </section>
 
-const noBtn = document.getElementById("noBtn");
-const container = document.querySelector(".container");
+    <!-- Skills Section -->
+    <section class="skills">
 
-noBtn.addEventListener("mouseover", function(){
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Builds the structure of every webpage using semantic elements.</p>
+        </div>
 
-    const maxX = container.clientWidth - noBtn.offsetWidth;
-    const maxY = container.clientHeight - noBtn.offsetHeight;
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Creates beautiful designs using colors, spacing, borders and layouts.</p>
+        </div>
 
-    const randomX = Math.floor(Math.random() * maxX);
-    const randomY = Math.floor(Math.random() * maxY);
+        <div class="skill-card">
+            <h3>Flexbox</h3>
+            <p>Aligns and organizes elements horizontally and vertically with ease.</p>
+        </div>
 
-    noBtn.style.left = randomX + "px";
-    noBtn.style.top = randomY + "px";
+    </section>
 
-});
-
-document.getElementById("yesBtn").addEventListener("click", function(){
-
-    document.getElementById("message").innerHTML =
-    "🎉 Thank you! You clicked YES.";
-
-});
-
-</script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Niño Guevarra</p>
+        <p>Future Front-End Developer</p>
+    </footer>
 
 </body>
 </html>
