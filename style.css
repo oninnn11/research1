@@ -1,0 +1,155 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* ========================= */
+/* NAVIGATION BAR */
+/* ========================= */
+
+.navbar{
+    background-color: #0f172a;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+}
+
+#logo{
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-btn{
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero{
+    background-color: white;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 20px;
+}
+
+.profile-picture{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #2563eb;
+}
+
+.hero h1{
+    color: #1e3a8a;
+}
+
+.course{
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+}
+
+.description{
+    text-align: center;
+    width: 500px;
+    color: #555;
+}
+
+#portfolio-btn{
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* SKILLS */
+/* ========================= */
+
+.skills{
+    display: flex;
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.skill-card{
+    flex: 1;
+
+    background-color: white;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.skill-card h3{
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+.skill-card p{
+    color: #555;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer{
+    background-color: #0f172a;
+    color: white;
+
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+}
